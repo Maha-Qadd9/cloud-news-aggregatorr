@@ -1,0 +1,17 @@
+# Cloud News Aggregator with Sentiment Analysis
+
+## Description
+This project pulls news articles using NewsAPI and analyzes their sentiment using PySpark and TensorFlow. Results are stored on Firebase.
+
+## Setup
+1. Install requirements: `pip install -r requirements.txt`
+2. Run: `python cloud_main.py`
+
+## Tools
+- PySpark
+- TensorFlow
+- Firebase
+- Kubernetes (for deployment)
+
+## Note
+Replace API keys with your own in the script.
