@@ -6,4 +6,4 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "main.py"]  # ← change this if your file is not main.py
+CMD ["python", "Another copy of cloud main (4).py"] 
