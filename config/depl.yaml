@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: news-aggregator-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: news-aggregator
+  template:
+    metadata:
+      labels:
+        app: news-aggregator
+    spec:
+      containers:
+      - name: news-aggregator-container
+        image: yourdockerhubusername/yourappname:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: NEWSAPI_KEY
+          value: "YOUR_NEWSAPI_KEY_PLACEHOLDER"
